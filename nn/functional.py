@@ -24,6 +24,12 @@ def sigmoid(x):
     """
     return 1 / (1 + np.exp(-x))
 
+def softplus(x):
+    """
+    Calculates the softplus activation function
+    """
+    return np.log(1 + np.exp(x))
+
 def tanh(x):
     """
     Calculates the tanh activation function
