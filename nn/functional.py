@@ -1,5 +1,11 @@
 import numpy as np
 
+def binary_step(x):
+    """
+    Calculates the binary step activation function
+    """
+    return np.where(x > 0, 1, 0)
+
 def leaky_relu(x):
     """
     Calculates the leaky relu activation function
