@@ -1,5 +1,10 @@
 import numpy as np
 
+def leaky_relu(x):
+    """
+    Calculates the leaky relu activation function
+    """
+    return np.maximum(0.01 * x, x)
 
 def relu(x):
     """
