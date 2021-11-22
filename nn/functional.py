@@ -24,6 +24,12 @@ def sigmoid(x):
     """
     return 1 / (1 + np.exp(-x))
 
+def softmax(x):
+    """
+    Calculates the softmax activation function
+    """
+    return np.exp(x) / np.sum(np.exp(x), axis=0)
+
 def softplus(x):
     """
     Calculates the softplus activation function
